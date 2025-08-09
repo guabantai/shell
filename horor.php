@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hacked By Raizo</title>
+
+  <!-- Font Horor -->
+  <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Creepster&display=swap" rel="stylesheet">
+  <!-- Font Modern -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://j.top4top.io/p_3380n7als1.jpg') no-repeat center center/cover;
+      color: white;
+      height: 100vh;
+      font-family: 'Poppins', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; //
+    }
+
+    .header-text {
+      font-family: 'Creepster', cursive;
+      font-size: 45px;
+      color: #e6e3e3;
+      text-shadow: 6px 6px 11px rgba(0, 0, 0, 0.8);
+      margin-top: 10px; //
+    }
+
+    .typed-text {
+      font-size: 38px;
+      font-family: 'Metal Mania', cursive;
+      color: #ffffff;
+      text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.8);
+      text-align: center;
+      max-width: 90%;
+    }
+
+    .join-link {
+      color: red;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 12px 24px;
+      border: 2px solid white;
+      border-radius: 10px;
+      margin-bottom: 10px; //
+      display: inline-block;
+      transition: 0.3s ease;
+      font-family: 'Creepster', cursive;
+    }
+
+    .join-link:hover {
+      background-color: white;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-text">Raizo Was Here</div>
+
+  <div class="typed-text"></div>
+
+  <p>
+    <a class="join-link" href="https://t.me/skkteam2025" target="_blank">JOIN SKK GRUP</a>
+  </p>
+
+  <!-- Audio autoplay -->
+  <audio id="backsound" loop>
+    <source src="https://i.top4top.io/m_35057yuet1.mp3" type="audio/mp3">
+  </audio>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      new Typed(".typed-text", {
+        strings: [
+          "Ketika Ketulusan Dibalas Penghianatan...",
+          "Hukum Makhluk Tak Berlaku...",
+          "Maka Hukum Tuhan Yang Lebih Pantas...",
+          "Raizo Still See You", 
+          "We See You", 
+          "But You Don't See Us"
+        ],
+        typeSpeed: 50,
+        backSpeed: 45,
+        backDelay: 2000,
+        loop: true
+      });
+
+      // Auto play backsound
+      let audio = document.getElementById("backsound");
+      audio.play().catch(() => {
+        document.body.addEventListener("click", () => {
+          audio.play();
+        }, { once: true });
+      });
+    });
+  </script>
+
+</body>
+</html>
