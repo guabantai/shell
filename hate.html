@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hacked By Raizo</title>
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000;
+      color: red;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+    }
+    .video-wrapper {
+      margin-top: 3px;
+      margin-bottom: 3px;
+    }
+    .video-wrapper video {
+      width: 560px;
+      max-width: 80vw;
+      height: auto;
+      aspect-ratio: 16/9;
+      border: 0.2px solid red;
+      border-radius: 20px;
+      box-shadow: 0 0 30px red;
+      animation: glow 1s infinite alternate;
+      display: block;
+      margin: 0 auto;
+    }
+    @keyframes glow {
+      from { box-shadow: 0 0 10px red; }
+      to   { box-shadow: 0 0 30px crimson; }
+    }
+
+    .Wrapper {
+      width: 540px;
+      height: 75px;
+      display: none;
+      margin: 0 auto 3px;
+      max-width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    #five {
+      z-index: 10;
+      position: absolute;
+      text-shadow: 0 0 15px #fff, 0 0 25px #ff0000;
+    }
+    h1 {
+      background: red;
+      padding: 6px 14px;
+      border-radius: 30px;
+      margin: 5px auto 3px;
+      text-align: center;
+      font-size: 1em;
+      font-family: 'Righteous', sans-serif;
+      display: none;
+      width: fit-content;
+      box-shadow: 0 0 15px #fff, 0 0 25px #000;
+    }
+    h1 a.join-link {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      text-shadow: 1px 1px 4px #fff;
+    }
+    p {
+      width: 300px;
+      margin: 2px auto;
+      text-align: center;
+      font-family: 'Righteous', sans-serif;
+      display: none;
+      color: #fff;
+      font-size: 0.85em;
+      text-shadow: 0 0 10px #000, 0 0 20px #000;
+    }
+	
+    .flash {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: white;
+      opacity: 0;
+      pointer-events: none;
+      z-index: 9999;
+      animation: flashEffect 6s infinite;
+    }
+    @keyframes flashEffect {
+      0%, 85%, 100% { opacity: 0; }
+      86% { opacity: 1; }
+      87% { opacity: 0; }
+      88% { opacity: 1; }
+      89% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="video-wrapper">
+    <video id="mainVideo" controls autoplay loop playsinline>
+      <source src="https://j.top4top.io/m_3546ly4lr1.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="Wrapper">
+    <canvas id="five" width="550" height="120"></canvas>
+  </div>
+
+  <h1>
+    <a class="join-link" href="https://t.me/skkteam2025" target="_blank">JOIN PEMAIN LAMA</a>
+  </h1>
+  <p>Jika masih mau bermain, Siapkan semuanya dahulu</p>
+  <p>Akan ku tunjukan Permainan sesungguhnya</p>
+
+  <!-- Lightning flash overlay -->
+  <div class="flash"></div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    // Autoplay volume full
+    const vid = document.getElementById("mainVideo");
+    vid.volume = 1.0;
+
+    // fallback lamun autoplay audio diblokir
+    document.addEventListener("click", () => {
+      if (vid.paused) {
+        vid.play();
+      }
+      vid.volume = 1.0;
+    });
+
+    // Load font
+    WebFontConfig = {
+      google: { families: ['Righteous'] },
+      active: function(){ drawText(); }
+    };
+    (function(){
+      var wf = document.createElement("script");
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js';
+      wf.async = 'true';
+      document.head.appendChild(wf);
+    })();
+
+    var canvas = document.getElementById("five");
+    var ctx = canvas.getContext("2d");
+
+    function drawText() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "red";
+      ctx.font = "2.5em Righteous";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+
+      // Animasi kedipan tulisan (petir)
+      setInterval(() => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        if (Math.random() > 0.3) {
+          ctx.shadowColor = "white";
+          ctx.shadowBlur = 20;
+          ctx.fillText("Raizo was here", canvas.width / 2, canvas.height / 2);
+        }
+      }, 200);
+    }
+
+    $(document).ready(function() {
+      $(".Wrapper,h1,p").fadeIn(500);
+    });
+  </script>
+</body>
+</html>
