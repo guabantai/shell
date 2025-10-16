@@ -22,7 +22,7 @@ define('APP_TITLE', 'DATA CENTER INDONESIA');
 
 $use_auth = true;
 $auth_users = array(
-    'kominfo' => '$2a$12$vynm9TGs.Hmg3CJf3M3Zq..nGUB3vxJdV/zKFPci53Bo5SWqSPZaq', 
+    'kominfo' => '$2a$12$vDzU1WVG61V5ds44D3JDEeJkyHF8qe21pnyQwxPMAcFYJtLoKcWNy', 
 );
 
 // Readonly users
